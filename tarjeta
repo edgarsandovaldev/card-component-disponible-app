@@ -1,0 +1,157 @@
+<mat-card class="example-card border border-fuera">
+  <mat-card-header >
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu" xPosition="before">
+      <button mat-menu-item>
+        <mat-icon>two_wheeler</mat-icon>
+        <span>Domicilios</span>
+      </button>
+      <button mat-menu-item disabled>
+        <mat-icon>voicemail</mat-icon>
+        <span>Pedidos por Teléfono</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>notifications_off</mat-icon>
+        <span>Disable alerts</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>dialpad</mat-icon>
+        <span>Redial</span>
+      </button>
+      <button mat-menu-item disabled>
+        <mat-icon>voicemail</mat-icon>
+        <span>Check voice mail</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon color="warn">paid</mat-icon>
+        <span>Nuestras Ofertas</span>
+      </button>
+    </mat-menu>
+
+    <div mat-card-avatar class="logo-image"></div>
+    <mat-card-title>Nombre del Negocio</mat-card-title>
+    <mat-card-subtitle>Categoria del negocio</mat-card-subtitle>
+
+  </mat-card-header>
+
+
+
+<br>
+
+  <mat-chip-list aria-label="Dog selection" >
+    <mat-chip >
+      <img matChipAvatar src="https://material.angular.io/assets/img/examples/shiba1.jpg" alt="Photo of a Shiba Inu"/>
+      Domicilios
+    </mat-chip>
+
+    <!--Pagos-->
+    <button mat-icon-button [matMenuTriggerFor]="pagos" aria-label="Example icon-button with a menu">
+      <mat-icon><span class="material-icons-outlined">
+        attach_money
+        </span></mat-icon>
+    </button>
+    <mat-menu #pagos="matMenu" xPosition="before">
+      <button mat-menu-item>
+
+        <span  >Pagos</span>
+      </button>
+      <button mat-menu-item disabled>
+        <span href=" {xxxxx} ">Efectivo</span>
+      </button>
+      <button mat-menu-item >
+        <span>Débito</span>
+      </button>
+      <button mat-menu-item >
+        <span>Nequi</span>
+      </button>
+      <button mat-menu-item disabled>
+        <span>Bancolombia</span>
+      </button>
+      <button mat-menu-item disabled>
+        <span>QR Bancolombia/NEQUI</span>
+      </button>
+
+    </mat-menu>
+    <!--Pagos-->
+
+
+    <button mat-button><mat-icon color="warn"><ion-icon name="logo-youtube"></ion-icon></mat-icon></button>
+    <button mat-button><mat-icon color="primary">share</mat-icon></button>
+
+
+
+
+  </mat-chip-list>
+  <br>
+
+  <mat-card-content>
+
+    <mat-divider></mat-divider>
+    <br>
+    <p class="bluetext">
+      Aqui describimmos el negocio y sus principales productos que comercializa..
+    </p>
+  </mat-card-content>
+
+
+  <mat-divider></mat-divider>
+
+  <mat-card-actions>
+    <button mat-button [matMenuTriggerFor]="aboveMenu"><mat-icon>call</mat-icon>&nbsp; Contactar</button>
+    <mat-menu #aboveMenu="matMenu" yPosition="above">
+      <button mat-menu-item><mat-icon aria-hidden="false" aria-label="{2:label} icon"><ion-icon name="logo-whatsapp" color="primary"></ion-icon></mat-icon> Whatsapp</button>
+      <button mat-menu-item><mat-icon>call</mat-icon>Llamar</button>
+    </mat-menu>
+
+    <button mat-button [matMenuTriggerFor]="aboveMenu"><mat-icon>location_on</mat-icon>&nbsp; Dirección</button>
+    <mat-menu #aboveMenu="matMenu" yPosition="above">
+      <button mat-menu-item><mat-icon aria-hidden="false" aria-label="{2:label} icon"><ion-icon name="logo-whatsapp" color="primary"></ion-icon></mat-icon> Whatsapp</button>
+      <button mat-menu-item><mat-icon><ion-icon name="map-outline" color="primary"></ion-icon></mat-icon>&nbsp;Llamar</button>
+    </mat-menu>
+
+    <button mat-icon-button [matMenuTriggerFor]="menu2" aria-label="Example icon-button with a menu">
+      <mat-icon><span class="material-icons-outlined">
+        watch_later
+        </span></mat-icon>
+    </button>
+    <mat-menu #menu2="matMenu" xPosition="before">
+      <button mat-menu-item>
+
+        <span>Lunes a Viernes</span>
+      </button>
+      <button mat-menu-item disabled>
+
+        <span>7:00 am a 8:00pm</span>
+      </button>
+      <button mat-menu-item>
+
+        <span>Sabados y Domingos</span>
+
+      </button>
+      <button mat-menu-item disabled>
+
+        <span>7:00 am a 1:00pm</span>
+
+      </button>
+    </mat-menu>
+
+
+
+
+
+
+
+  </mat-card-actions>
+
+
+
+
+
+
+</mat-card>
+
+
+
+
